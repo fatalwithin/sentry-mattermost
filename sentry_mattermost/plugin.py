@@ -25,7 +25,7 @@ from sentry import tagstore
 from sentry.plugins.bases import notify
 from sentry_plugins.base import CorePluginMixin
 from sentry.utils import json
-from sentry.integrations import FeatureDescription, IntegrationFeatures
+# from sentry.integrations import FeatureDescription, IntegrationFeatures
 from string import Formatter
 
 logger = logging.getLogger("sentry.integrations.sentry_mattermost.plugin")
@@ -108,14 +108,14 @@ class Mattermost(CorePluginMixin, notify.NotificationPlugin):
     required_field = "webhook"
     conf_key = "mattermost"
 
-    feature_descriptions = [
-        FeatureDescription(
-            """
-            Enables notifications for Mattermost Open Source Chat.  
-            """,
-            IntegrationFeatures.ALERT_RULE,
-        )
-    ]
+    # feature_descriptions = [
+    #     FeatureDescription(
+    #         """
+    #         Enables notifications for Mattermost Open Source Chat.  
+    #         """,
+    #         IntegrationFeatures.ALERT_RULE,
+    #     )
+    # ]
 
     def get_config(self, project, **kwargs):
         return [
