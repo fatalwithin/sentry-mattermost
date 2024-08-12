@@ -7,7 +7,7 @@ This is based in the sentry-slack plugin: https://github.com/getsentry/sentry-sl
 # Usage
 Install with pip and enable the plugin in a Sentry Project:
 
-     pip2.7 install -e git+https://github.com/Biekos/sentry-mattermost.git@master#egg=sentry-mattermost
+     pip2.7 install -e git+https://github.com/fatalwithin/sentry-mattermost.git@master#egg=sentry-mattermost
 
 You may need to install git:
 
